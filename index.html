@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Amany Mahmoud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Dr.Amany Mahmoud</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">خدماتنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clinic" class="nav-link">العيادة</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#booking" class="nav-link">حجز موعد</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">آراء المرضى</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">المدونة</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">اتصل بنا</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Dr.Amany Mahmoud</h1>
+                    <h2 class="hero-subtitle">أخصائية العلاج الطبيعي</h2>
+                    <p class="hero-description">د. أماني محمود – أخصائية علاج طبيعي بخبرة تزيد عن 10 سنوات، حاصلة على بكالوريوس العلاج الطبيعي.</p>
+                    <button class="cta-button" onclick="scrollToSection('booking')">احجز موعدك</button>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-user-md"></i>
+                        <p>Dr.Amany Mahmoud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Dr.Amany</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>د. أماني محمود هي أخصائية علاج طبيعي ماهرة ومتمرسة متخصصة في مساعدة المرضى على التعافي من الإصابات وتحسين نوعية حياتهم. مع أكثر من عقد من الخبرة المهنية، طورت خبرة في مجالات مختلفة من العلاج الطبيعي.</p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>التعليم</h4>
+                                <p>بكالوريوس العلاج الطبيعي</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>الخبرة</h4>
+                                <p>أكثر من 10 سنوات من الخبرة المهنية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="specialties">
+                        <h4>التخصصات:</h4>
+                        <ul>
+                            <li>إصابات الرياضة</li>
+                            <li>مشاكل العمود الفقري</li>
+                            <li>إعادة التأهيل بعد الجراحة</li>
+                            <li>علاج الأطفال الطبيعي</li>
+                            <li>العلاج اليدوي</li>
+                        </ul>
+                    </div>
+
+                    <button class="cv-button" onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        تحميل السيرة الذاتية
+                    </button>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-user-md"></i>
+                        <p>صورة مهنية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>جلسات العلاج اليدوي</h3>
+                    <p>تقنيات علاج متخصصة باليد لتخفيف الألم واستعادة الحركة.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>إعادة تأهيل إصابات الرياضة</h3>
+                    <p>برامج شاملة للتعافي للرياضيين والإصابات المتعلقة بالرياضة.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>برامج التعافي بعد الجراحة</h3>
+                    <p>برامج إعادة تأهيل منظمة لضمان التعافي الأمثل بعد الإجراءات الجراحية.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>علاج الأطفال الطبيعي</h3>
+                    <p>رعاية متخصصة للأطفال ذوي التحديات التنموية والجسدية.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>أجهزة حديثة</h3>
+                    <p>أجهزة علاج طبيعي متطورة لخيارات علاج متقدمة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Section -->
+    <section id="clinic" class="clinic">
+        <div class="container">
+            <h2 class="section-title">عيادتنا</h2>
+            <div class="clinic-content">
+                <div class="clinic-info">
+                    <div class="clinic-photos">
+                        <div class="photo-grid">
+                            <div class="clinic-photo">
+                                <div class="placeholder-image">
+                                    <i class="fas fa-hospital"></i>
+                                    <p>داخل العيادة</p>
+                                </div>
+                            </div>
+                            <div class="clinic-photo">
+                                <div class="placeholder-image">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <p>الأجهزة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clinic-details">
+                        <h3>ساعات العمل</h3>
+                        <div class="hours">
+                            <div class="hour-item">
+                                <span>الأحد - الخميس:</span>
+                                <span>9:00 ص - 6:00 م</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>الجمعة:</span>
+                                <span>9:00 ص - 2:00 م</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>السبت:</span>
+                                <span>مغلق</span>
+                            </div>
+                        </div>
+                        
+                        <div class="location">
+                            <h3>الموقع</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> اكتوبر. الجيزه</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">احجز موعدك</h2>
+            <div class="booking-content">
+                <div class="booking-form">
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">الخدمة المطلوبة</label>
+                            <select id="service" name="service" required>
+                                <option value="">اختر الخدمة</option>
+                                <option value="manual-therapy">العلاج اليدوي</option>
+                                <option value="sports-rehab">إعادة تأهيل الرياضة</option>
+                                <option value="post-surgery">التعافي بعد الجراحة</option>
+                                <option value="pediatric">علاج الأطفال</option>
+                                <option value="general">استشارة عامة</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">التاريخ المفضل</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">الوقت المفضل</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">احجز الموعد</button>
+                    </form>
+                </div>
+                
+                <div class="whatsapp-booking">
+                    <h3>حجز سريع عبر واتساب</h3>
+                    <p>تفضل الحجز عبر واتساب؟ اضغط أدناه للتواصل الفوري.</p>
+                    <a href="https://wa.me/+201012878577" class="whatsapp-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        احجز عبر واتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Feedbacks</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"ساعدتني د. أماني في التعافي من إصابة رياضية اعتقدت أنها ستنهي مسيرتي الرياضية. خبرتها ورعايتها استثنائية."</p>
+                    <h4>- أحمد حسن</h4>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"بعد جراحة ظهري، كان برنامج إعادة التأهيل لد. أماني حاسماً لتعافيي. أنا الآن خالي من الألم ونشط مرة أخرى."</p>
+                    <h4>- سارة محمد</h4>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"علاج د. أماني لمشاكل طفلي التنموية كان مذهلاً. إنها صبورة، مهتمة ومهنية جداً."</p>
+                    <h4>- فاطمة علي</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">نصائح صحية ومقالات</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>وضعية الجلوس الصحية</h3>
+                        <p>تعلم الطريقة الصحيحة للجلوس على مكتبك لمنع آلام الظهر والحفاظ على الوضعية الجيدة طوال اليوم.</p>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>تمارين بسيطة للرقبة</h3>
+                        <p>تمارين سهلة يمكنك القيام بها في المنزل لتخفيف توتر الرقبة وتحسين المرونة.</p>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-running"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>نصائح للرياضيين</h3>
+                        <p>روتينات الإحماء والتهدئة الأساسية لمنع إصابات الرياضة وتحسين الأداء.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p>+20 1012878577</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>واتساب</h4>
+                            <p>+20 1012878577</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>dr.amani@physio.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>اكتوبر. الجيزه</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>تابعنا</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr.Amany Mahmoud</h3>
+                    <p>خدمات علاج طبيعي مهنية بخبرة تزيد عن 10 سنوات.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li>العلاج اليدوي</li>
+                        <li>إعادة تأهيل الرياضة</li>
+                        <li>التعافي بعد الجراحة</li>
+                        <li>علاج الأطفال</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <p><i class="fas fa-phone"></i> +20 1012878577</p>
+                    <p><i class="fas fa-envelope"></i> dr.amani@physio.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>اكتوبر. الجيزه</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 د. أماني محمود. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
