@@ -166,35 +166,24 @@ body {
 }
 
 .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeInLeft 1s ease 0.8s both;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .placeholder-image {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 2px dashed #cbd5e0;
+  display: inline-block;
+  text-align: center;
 }
 
-.placeholder-image i {
-    font-size: 4rem;
-    color: #2c7a7b;
-    margin-bottom: 1rem;
+.doctor-photo {
+  width: 200px;       /* adjust size as needed */
+  height: auto;       /* keep aspect ratio */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* ensures good cropping */
+  margin-top: 10px;
 }
 
-.placeholder-image p {
-    color: #4a5568;
-    font-weight: 500;
-}
+
 
 /* Section Styles */
 .section-title {
